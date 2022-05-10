@@ -1,5 +1,9 @@
 import React from "react";
-
+import airbnbLogo from "../images/airbnb-logo.svg";
 export default function Navbar() {
-    return <h1>fsdfds</h1>;
+    return (
+        <nav class="navbar">
+            <img src={airbnbLogo}></img>
+        </nav>
+    );
 }

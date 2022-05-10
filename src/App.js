@@ -5,7 +5,7 @@ import Offers from "./components/Offers";
 
 export default function App() {
     return (
-        <div className="airbnbMainContainer">
+        <div className="airbnb">
             <Navbar />
             <Hero />
             <Offers />
