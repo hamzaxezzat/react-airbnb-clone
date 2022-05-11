@@ -1,6 +1,6 @@
 import React from "react";
 import imgGrid from "../images/imgGrid.png";
-export default function Navbar() {
+export default function Hero() {
     return (
         <div className="HeroSection">
             <img src={imgGrid} alt="img Grid" />
