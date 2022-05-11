@@ -49,19 +49,19 @@ body {
     margin-left: 50px;
     display: flex;
 }
-.offersSection .itemContainer {
+.itemContainer {
     margin-right: 30px;
 }
-.offersSection .itemImg {
+.itemImg {
     position: relative;
 }
-.offersSection .itemImg .itemPhoto {
+.itemImg .itemPhoto {
     width: 150px;
     height: 200px;
     object-fit: cover;
     border-radius: 1rem;
 }
-.offersSection .itemImg p {
+.itemImg p {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -70,14 +70,14 @@ body {
     padding: 3px 5px;
     border-radius: 5px;
 }
-.offersSection .itemInfo {
+.itemInfo {
     font-weight: 300;
     font-size: 11px;
 }
-.offersSection .itemInfo div {
+.itemInfo div {
     margin-top: 6px;
 }
-.offersSection .itemInfo span {
+.itemInfo span {
     color: #918e9b;
 }
 
