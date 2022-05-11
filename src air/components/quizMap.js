@@ -34,3 +34,17 @@ function p(i) {
     return `<p> ${i}</p>`;
 }
 let pokemonToP = pokemon.map((x) => p(x));
+
+/*
+Swap Cases Challenge
+*/
+let swappingCases = "elZERo";
+let swappingCasesSolution = swappingCases
+    .split("")
+    .map((i) => {
+        i === i.toUpperCase() ? i.toLowerCase() : i.toUpperCase();
+    })
+    .join("");
+console.log(swappingCasesSolution);
+let invertedNumbers = [1, -10, -(-20), 15, 100, -301];
+let ignoreBooleans = -"Elz123er40";
