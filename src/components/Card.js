@@ -16,11 +16,7 @@ export default function Card({
         <div className="itemContainer">
             <div className="oneItem">
                 <div className="itemImg">
-                    <img
-                        className="itemPhoto"
-                        src="./images/Card1.jpg"
-                        alt={alt}
-                    ></img>
+                    <img className="itemPhoto" src={img} alt={alt}></img>
                     <div className="itemStatus">
                         <p>{status}</p>
                     </div>
