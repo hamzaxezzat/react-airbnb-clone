@@ -1,7 +1,7 @@
 import React from "react";
-import image from "../images/profile.jpg";
+// import image from "../images/profile.jpg";
 
-let imgSrc = "../images/";
+// let imgSrc = "../images/";
 export default function Card({
     img,
     alt,
@@ -16,7 +16,11 @@ export default function Card({
         <div className="itemContainer">
             <div className="oneItem">
                 <div className="itemImg">
-                    <img className="itemPhoto" src={image} alt={alt}></img>
+                    <img
+                        className="itemPhoto"
+                        src="./images/Card1.jpg"
+                        alt={alt}
+                    ></img>
                     <div className="itemStatus">
                         <p>{status}</p>
                     </div>

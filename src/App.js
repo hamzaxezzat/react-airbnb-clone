@@ -11,7 +11,7 @@ export default function App() {
                 <Hero />
                 <div className="cardsContainer">
                     <Card
-                        img="profile.jpg"
+                        img="Card1.jpg"
                         alt="profile"
                         rating={5.0}
                         reviewCount={6}
