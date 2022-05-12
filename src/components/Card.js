@@ -3,35 +3,46 @@ import React from "react";
 
 // let imgSrc = "../images/";
 export default function Card({
-    img,
-    alt,
-    status,
-    rating,
-    reviewCount,
-    country,
-    title,
-    price,
+    item,
+    // img,
+    // alt,
+    // status,
+    // rating,
+    // reviewCount,
+    // country,
+    // title,
+    // price,
 }) {
+    let itemStatusP;
+    if (item.status === 0) {
+        itemStatusP = "Sold Out";
+    } else if (item.location === "Online") {
+        itemStatusP = "Online";
+    }
     return (
         <div className="itemContainer">
             <div className="oneItem">
                 <div className="itemImg">
-                    <img className="itemPhoto" src={img} alt={alt}></img>
+                    <img
+                        className="itemPhoto"
+                        src={`./images/${item.coverImg}`}
+                        alt={item.coverImg}
+                    ></img>
                     <div className="itemStatus">
-                        <p>{status}</p>
+                        {itemStatusP && <p>{itemStatusP}</p>}
                     </div>
                 </div>
             </div>
             <div className="itemInfo">
                 <div>
-                    ♥️ {rating}
+                    ♥️ {item.stats.rating}
                     <span>
-                        ({reviewCount}) • {country}{" "}
+                        ({item.stats.reviewCount}) • {item.location}{" "}
                     </span>
                 </div>
-                <div>{title}</div>
+                <div>{item.title}</div>
                 <div>
-                    <b>{price}</b> / person
+                    <b>{item.price}</b> / person
                 </div>
             </div>
         </div>
